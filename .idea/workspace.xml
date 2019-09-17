@@ -2,12 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="417de5b4-8bbc-45cd-9042-5f94615172af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/LabProg.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MenorCaminho.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/MenorCaminho1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -31,7 +25,7 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/robocolecionador/venv/BatalhaNaval.py" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -45,7 +39,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.MenorCaminho">
+  <component name="RunManager" selected="Python.MenorCaminho1">
     <configuration name="MapaOtimizado" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="LabProg" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -111,8 +105,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.MenorCaminho" />
         <item itemvalue="Python.MenorCaminho1" />
+        <item itemvalue="Python.MenorCaminho" />
         <item itemvalue="Python.MapaOtimizado" />
       </list>
     </recent_temporary>
@@ -147,14 +141,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/MenorCaminho1.py</url>
-          <line>37</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/MenorCaminho.py</url>
           <line>32</line>
           <option name="timeStamp" value="21" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/MenorCaminho1.py</url>
+          <line>2</line>
+          <option name="timeStamp" value="25" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
