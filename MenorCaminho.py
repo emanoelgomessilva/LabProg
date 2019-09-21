@@ -1,20 +1,15 @@
-class Aresta():
+import math
+
+class Vertice():
     def __init__(self):
-        self.cidades = []
+        self.vizinhos = []
         self.peso = 0
-        self.marcado = ""
 
-    def getCidades(self):
-        return self.cidades
+    def getVizinhos(self):
+        return self.vizinhos
 
-    def setCidades(self, cidades):
-        self.cidades = cidades
-
-    def getMarcado(self):
-        return self.marcado
-
-    def setMarcado(self, marcado):
-        self.marcado = marcado
+    def setVizinhos(self, vizinhos):
+        self.vizinhos = vizinhos
 
     def getPeso(self):
         return self.peso
@@ -22,72 +17,67 @@ class Aresta():
     def setPeso(self, peso):
         self.peso = peso
 
-def mapeiaCaminho(origem, destino, arestas, caminho):
-    menorArestaOrigem = 1000000
-    menorArestaDestino = 1000000
-    menorDistanciaOrigem = 1000000
-    menorDistanciaDestino = 1000000
+def Ordenar(Q):
+    for i in range(1,len(Q)):
+        x = Q[i]
+        j = i-1
+        while j>=0 and x.getPeso()<Q[j].getPeso():
+            Q[j+1] = Q[j]
+            j=j-1
+        Q[j+1] = x
 
-    for i in range(len(arestas)):
-        soma = i
-        if((arestas[i].getCidades().__contains__(origem)) and (arestas[i].getCidades().__contains__(destino))):
-            caminho= caminho + arestas[i].getPeso()
-            return caminho
-        if((arestas[i].getCidades()[0]) == (arestas[i].getCidades()[1])):
-            return caminho
-        if ((arestas[i].getCidades()[0] == origem) and (arestas[i].getPeso() < menorDistanciaOrigem)):
-            menorDistanciaOrigem = arestas[i].getPeso()
-            menorArestaOrigem = soma
-        if ((arestas[i].getCidades()[0] == destino) and (arestas[i].getPeso() < menorDistanciaDestino)):
-            menorDistanciaDestino = arestas[i].getPeso()
-            menorArestaDestino = soma
-    if(menorArestaOrigem != 1000000):
-        arestas[menorArestaOrigem].setMarcado("s")
-    if (menorArestaDestino != 1000000):
-        arestas[menorArestaDestino].setMarcado("s")
-    if(menorDistanciaOrigem == 1000000):
-        caminho = caminho + menorDistanciaDestino
-    elif (menorDistanciaDestino == 1000000):
-        caminho = caminho + menorDistanciaOrigem
-    else:
-        caminho = caminho + menorDistanciaOrigem + menorDistanciaDestino
-    if(menorArestaOrigem != 1000000 and arestas[menorArestaOrigem].getCidades()[0] == origem):
-        origem = arestas[menorArestaOrigem].getCidades()[1]
-    elif(menorArestaOrigem != 1000000):
-        origem = arestas[menorArestaOrigem].getCidades()[0]
-    if (menorArestaDestino != 1000000 and arestas[menorArestaDestino].getCidades()[0] == destino):
-        destino = arestas[menorArestaDestino].getCidades()[1]
-    elif(menorArestaDestino != 1000000):
-        destino = arestas[menorArestaDestino].getCidades()[0]
+def dijkstra(grafo, origem, destino):
+    Q = []
+    grafo[origem-1].setPeso(0)
+    for v in grafo:
+        Q.append(v)
 
-        mapeiaCaminho(origem, destino, arestas, caminho)
-    return caminho
+    Ordenar(Q)
+
+    while Q:
+        v = Q[0]
+        Q.remove(v)
+        for u in v.vizinhos:
+            novoPeso = v.peso + int(u[1])
+            if novoPeso < grafo[int(u[0])-1].peso:
+                grafo[int(u[0])-1].peso = novoPeso
+        Ordenar(Q)
+    return grafo[destino-1].peso
 
 entrada = input().split(" ")
 n = int(entrada[0])
 a = int(entrada[1])
 b = int(entrada[2])
-arestas = []
-caminho = 0
-OrigemPercorrida=0
-Destinopercorrido = 0
+grafo = []
+caminho = []
+peso = 0
+pesos = []
+
+for i in range(1,int(n)+1):
+    vertice = Vertice()
+    vertice.setPeso(math.inf)
+    grafo.append(vertice)
 
 for i in range(int(n)-1):
     montaAresta = input().split(" ")
-    aresta = Aresta()
-    cidades = []
-    cidades.append(int(montaAresta[0]))
-    cidades.append(int(montaAresta[1]))
-    aresta.setCidades(cidades)
-    aresta.setPeso(int(montaAresta[2]))
+    arestas = []
+    aresta = []
+    aresta1 = []
+    aresta.append(montaAresta[1])
+    aresta.append(montaAresta[2])
+    aresta1.append(montaAresta[0])
+    aresta1.append(montaAresta[2])
+    arestas = []
+    arestas1 = []
     arestas.append(aresta)
+    arestas1.append(aresta1)
+    lista = grafo[int(montaAresta[0])-1].getVizinhos()
+    lista.append(aresta)
+    grafo[int(montaAresta[0])-1].setVizinhos(lista)
+    lista1 = grafo[int(montaAresta[1])-1].getVizinhos()
+    lista1.append(aresta1)
+    grafo[int(montaAresta[1])-1].setVizinhos(lista1)
 
-print(mapeiaCaminho(a, b, arestas, caminho))
+destino = dijkstra(grafo, a, b)
 
-
-
-
-
-
-
-
+print(destino)
