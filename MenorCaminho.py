@@ -1,5 +1,8 @@
 import math
 
+#classe que descreve um vértice. O mesmo terá o seu peso, que inicialmente será de 0, e uma lista de vizinhos, que terá
+#um conjunto de listas, cada uma com 2 valores: o número do vizinho e a distância para se chegar a este vizinho.
+#o peso de um vértice corresponderá à menor distância entre este vértice e o vértice de destino.
 class Vertice():
     def __init__(self):
         self.vizinhos = []
@@ -17,30 +20,44 @@ class Vertice():
     def setPeso(self, peso):
         self.peso = peso
 
+#Algoritmo usado para ordenar a priority queue, foi utilizado o insertion sort
 def Ordenar(Q):
     for i in range(1,len(Q)):
-        x = Q[i]
-        j = i-1
-        while j>=0 and x.getPeso()<Q[j].getPeso():
-            Q[j+1] = Q[j]
-            j=j-1
-        Q[j+1] = x
-
+        atual = Q[i]
+        anterior = i-1
+        while anterior>=0 and atual.getPeso()<Q[anterior].getPeso():
+            Q[anterior+1] = Q[anterior]
+            anterior=anterior-1
+        Q[anterior+1] = atual
+#Implementação do algoritmo de Dijkstra, que recebe como parâmetros, o grafo fornecido na entrada, o vertice inicial e o
+#vértice final.
 def dijkstra(grafo, origem, destino):
+    #lista de prioridade para processamento dos vértices, ela conterá todos os
     Q = []
+    #o vértice inicial começa com peso 0, denotando que ele é o início do caminho, sendo assim a distância percorrida
+    #até o destino igual a 0
     grafo[origem-1].setPeso(0)
-    for v in grafo:
-        Q.append(v)
-
+    #todos os vértices do grafo são adicionados à lista de prioridade
+    for vertice in grafo:
+        Q.append(vertice)
+    #É feita a ordenação da lista de prioridade, ficando o vértice de menor peso sempre no inicio da lista. Desta forma
+    #será sempre verificado o vértice de menor peso e seus vizinhos.
     Ordenar(Q)
 
+    #enquanto a lista de prioridade tiver elementos, o laço será processado
     while Q:
-        v = Q[0]
-        Q.remove(v)
-        for u in v.vizinhos:
-            novoPeso = v.peso + int(u[1])
-            if novoPeso < grafo[int(u[0])-1].peso:
-                grafo[int(u[0])-1].peso = novoPeso
+        #vértice verificado
+        vertice = Q[0]
+        #o vértice verificado será removido da lista,evitando que ele seja verificado novamente
+        Q.remove(vertice)
+        #para cada vizinho de vertice será verificado se a soma do peso de vertice + a distancia percorrida até o
+        #vizinho é menor do que o peso do vizinho, se sim o peso do vizinho será modificado para este somatório.
+        #com isso, a tendência é que o processo se propague até o destino. No final deste processo, o peso de destino
+        #corresponderá à menor distância entre origem e destino.
+        for vizinho in vertice.vizinhos:
+            novoPeso = vertice.peso + int(vizinho[1])
+            if novoPeso < grafo[int(vizinho[0])-1].peso:
+                grafo[int(vizinho[0])-1].peso = novoPeso
         Ordenar(Q)
     return grafo[destino-1].peso
 
