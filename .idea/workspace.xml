@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="417de5b4-8bbc-45cd-9042-5f94615172af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/CortandoPapel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/DividindoImperio.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MapaOtimizado.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MenorCaminho.py" beforeDir="false" afterPath="$PROJECT_DIR$/MenorCaminho.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CortandoPapel.py" beforeDir="false" afterPath="$PROJECT_DIR$/CortandoPapel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DividindoImperio_TimeTry.py" beforeDir="false" afterPath="$PROJECT_DIR$/DividindoImperio_TimeTry.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -198,13 +196,13 @@
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/DividindoImperio.py</url>
-          <line>62</line>
+          <url>file://$PROJECT_DIR$/DividindoImperio_TimeTry.py</url>
+          <line>79</line>
           <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/CortandoPapel.py</url>
-          <line>17</line>
+          <line>24</line>
           <option name="timeStamp" value="55" />
         </line-breakpoint>
       </breakpoints>
