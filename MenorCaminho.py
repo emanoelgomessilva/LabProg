@@ -66,9 +66,6 @@ n = int(entrada[0])
 a = int(entrada[1])
 b = int(entrada[2])
 grafo = []
-caminho = []
-peso = 0
-pesos = []
 
 for i in range(1,int(n)+1):
     vertice = Vertice()

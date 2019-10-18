@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="417de5b4-8bbc-45cd-9042-5f94615172af" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/CortandoPapel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DividindoImperio.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MapaOtimizado.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MenorCaminho.py" beforeDir="false" afterPath="$PROJECT_DIR$/MenorCaminho.py" afterDir="false" />
     </list>
@@ -39,7 +42,49 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.MenorCaminho">
+  <component name="RunManager" selected="Python.CortandoPapel">
+    <configuration name="CortandoPapel" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="LabProg" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CortandoPapel.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="DividindoImperio" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="LabProg" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\emano\OneDrive\Documentos\GitHub\LabProg\DividindoImperio_TimeTry.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="MapaOtimizado" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="LabProg" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -105,6 +150,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.CortandoPapel" />
+        <item itemvalue="Python.DividindoImperio" />
         <item itemvalue="Python.MenorCaminho" />
         <item itemvalue="Python.MenorCaminho1" />
         <item itemvalue="Python.MapaOtimizado" />
@@ -149,6 +196,16 @@
           <url>file://$PROJECT_DIR$/MenorCaminho.py</url>
           <line>44</line>
           <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/DividindoImperio.py</url>
+          <line>62</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/CortandoPapel.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="55" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
