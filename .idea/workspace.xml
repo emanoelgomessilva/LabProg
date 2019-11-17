@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="417de5b4-8bbc-45cd-9042-5f94615172af" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/JuvenalNaoConfiaEmNinguem.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LoboMauEOvelhas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ColheitaCaju.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ColheitaCajuAlt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Expressões.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/FilasHospital.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LinhasCruzadas.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Ortografia.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/TomandoDeVolta.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,8 +45,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.LoboMauEOvelhas">
-    <configuration name="CortandoPapel" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python.FilasHospital">
+    <configuration name="Expressões" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="LabProg" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -53,7 +58,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/CortandoPapel.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Expressões.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -62,7 +67,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="DividindoImperio" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="FilasHospital" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="LabProg" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -74,7 +79,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\emano\OneDrive\Documentos\GitHub\LabProg\DividindoImperio_TimeTry.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/FilasHospital.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -83,7 +88,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="LoboMauEOvelhas" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="LinhasCruzadas" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="LabProg" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -95,7 +100,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LoboMauEOvelhas.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/LinhasCruzadas.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -104,7 +109,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="MenorCaminho" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Ortografia" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="LabProg" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -116,7 +121,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/MenorCaminho.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Ortografia.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -125,7 +130,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Substrings" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="TomandoDeVolta" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="LabProg" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -137,7 +142,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Substrings.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/TomandoDeVolta.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -148,11 +153,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.LoboMauEOvelhas" />
-        <item itemvalue="Python.Substrings" />
-        <item itemvalue="Python.CortandoPapel" />
-        <item itemvalue="Python.DividindoImperio" />
-        <item itemvalue="Python.MenorCaminho" />
+        <item itemvalue="Python.FilasHospital" />
+        <item itemvalue="Python.Expressões" />
+        <item itemvalue="Python.LinhasCruzadas" />
+        <item itemvalue="Python.TomandoDeVolta" />
+        <item itemvalue="Python.Ortografia" />
       </list>
     </recent_temporary>
   </component>
@@ -210,7 +215,37 @@
           <line>15</line>
           <option name="timeStamp" value="57" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/ColheitaCajuAlt.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Ortografia.py</url>
+          <line>42</line>
+          <option name="timeStamp" value="89" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/TomandoDeVolta.py</url>
+          <line>30</line>
+          <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Expressões.py</url>
+          <line>174</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/FilasHospital.py</url>
+          <line>125</line>
+          <option name="timeStamp" value="108" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="listaPacientes._inicio" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
